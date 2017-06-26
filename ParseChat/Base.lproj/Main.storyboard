@@ -123,6 +123,10 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="sGb-gw-IaH">
+                                                    <rect key="frame" x="177" y="44" width="20" height="20"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </activityIndicatorView>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="lj7-dh-9x7" firstAttribute="leading" secondItem="NGN-4Q-hQ9" secondAttribute="leadingMargin" constant="8" id="7Z5-Dm-Y4D"/>
@@ -141,10 +145,6 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="sGb-gw-IaH">
-                                <rect key="frame" x="114" y="141" width="20" height="20"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
