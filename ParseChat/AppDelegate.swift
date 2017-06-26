@@ -26,6 +26,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             let chatViewController = storyboard.instantiateViewController(withIdentifier: "ChatNavController")
             window?.rootViewController = chatViewController
         }
+        
+        NotificationCenter.default.addObserver(forName: NSNotification.Name("logoutNotification"), object: nil, queue: OperationQueue.main) { (Notification) in
+            // take user to logout screen
+            print("notification received")
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let loginViewController = storyboard.instantiateViewController(withIdentifier: "LoginViewController")
+            self.window?.rootViewController = loginViewController
+        }
         // Override point for customization after application launch.
         return true
     }

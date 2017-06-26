@@ -13,6 +13,7 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
 
     @IBOutlet weak var chatTableView: UITableView!
     
+    @IBOutlet weak var logoutButton: UIBarButtonItem!
     @IBOutlet weak var chatMessageField: UITextField!
     
     @IBAction func sendMessage(_ sender: Any) {
@@ -86,7 +87,9 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
     @IBAction func logOut(_ sender: Any) {
         PFUser.logOutInBackground { (error: Error?) in
         }
+        NotificationCenter.default.post(name: NSNotification.Name("logoutNotification"), object: nil)
     }
+    
     /*
     // MARK: - Navigation
 
