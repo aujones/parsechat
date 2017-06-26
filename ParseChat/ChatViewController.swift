@@ -10,8 +10,6 @@ import UIKit
 import Parse
 
 class ChatViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    
-    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
 
     @IBOutlet weak var chatTableView: UITableView!
     
@@ -85,6 +83,10 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
         }
     }
     
+    @IBAction func logOut(_ sender: Any) {
+        PFUser.logOutInBackground { (error: Error?) in
+        }
+    }
     /*
     // MARK: - Navigation
 
