@@ -12,8 +12,6 @@ import Parse
 class ChatViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var chatTableView: UITableView!
-    
-    @IBOutlet weak var logoutButton: UIBarButtonItem!
     @IBOutlet weak var chatMessageField: UITextField!
     
     @IBAction func sendMessage(_ sender: Any) {
@@ -34,6 +32,7 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
     var messages: [PFObject] = []
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         
         chatTableView.delegate = self
@@ -43,7 +42,6 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         chatTableView.rowHeight = UITableViewAutomaticDimension
         chatTableView.estimatedRowHeight = 80
-
         
         chatTableView.reloadData()
     }

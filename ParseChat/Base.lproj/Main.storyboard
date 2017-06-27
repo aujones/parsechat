@@ -52,10 +52,10 @@
                                     <action selector="logInInitiated:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OIP-rS-OTJ"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Parse Chat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ro2-UW-DbA">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ParseChat" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ro2-UW-DbA">
                                 <rect key="frame" x="96" y="127" width="200" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="35"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -123,23 +123,18 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="sGb-gw-IaH">
-                                                    <rect key="frame" x="177" y="44" width="20" height="20"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                </activityIndicatorView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="lj7-dh-9x7" firstAttribute="leading" secondItem="NGN-4Q-hQ9" secondAttribute="leadingMargin" constant="8" id="7Z5-Dm-Y4D"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="U4t-eq-ElV" secondAttribute="bottom" constant="8" id="PM0-3k-Hhs"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="U4t-eq-ElV" secondAttribute="trailing" constant="8" id="UdD-Vm-NVJ"/>
-                                                <constraint firstItem="U4t-eq-ElV" firstAttribute="leading" secondItem="NGN-4Q-hQ9" secondAttribute="leadingMargin" constant="8" id="YrR-9k-tne"/>
-                                                <constraint firstItem="lj7-dh-9x7" firstAttribute="top" secondItem="NGN-4Q-hQ9" secondAttribute="topMargin" constant="8" id="irv-TZ-pUM"/>
-                                                <constraint firstItem="U4t-eq-ElV" firstAttribute="top" secondItem="lj7-dh-9x7" secondAttribute="bottom" constant="8" id="vx4-Qk-iny"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="lj7-dh-9x7" secondAttribute="trailing" constant="8" id="yxS-O8-zPq"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="lj7-dh-9x7" secondAttribute="trailing" constant="8" id="AkW-L1-mAz"/>
+                                                <constraint firstItem="lj7-dh-9x7" firstAttribute="top" secondItem="NGN-4Q-hQ9" secondAttribute="topMargin" constant="8" id="Aro-PX-reF"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="U4t-eq-ElV" secondAttribute="trailing" constant="8" id="KoG-Ho-FhG"/>
+                                                <constraint firstItem="U4t-eq-ElV" firstAttribute="top" secondItem="lj7-dh-9x7" secondAttribute="bottom" constant="8" id="c5t-My-4xN"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="U4t-eq-ElV" secondAttribute="bottom" constant="8" id="gOP-yQ-GFK"/>
+                                                <constraint firstItem="lj7-dh-9x7" firstAttribute="leading" secondItem="NGN-4Q-hQ9" secondAttribute="leadingMargin" constant="8" id="jeB-II-eE7"/>
+                                                <constraint firstItem="U4t-eq-ElV" firstAttribute="leading" secondItem="NGN-4Q-hQ9" secondAttribute="leadingMargin" constant="8" id="ySu-1t-5SI"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="activityIndicator" destination="sGb-gw-IaH" id="kh5-WS-6w0"/>
                                             <outlet property="messageLabel" destination="U4t-eq-ElV" id="8md-cQ-8Fe"/>
                                             <outlet property="usernameLabel" destination="lj7-dh-9x7" id="DMF-yN-2yq"/>
                                         </connections>
